@@ -309,13 +309,13 @@
 					<select name="month">
 					<option disabled selected>Month </option>
 					<?php
-					$month=array("January", "February", "March", "April", "May", "June" ,"July" ,"August","September","October","November", "December");
-							for ($j=0;$j<count($month);$j++){
-							 echo "<option value = '",$j,"'>",$j,"</option>";
-							}
+					$mont= array("January","February","March","April","May","June","July","August","September","October","November","December");
+						for($month=0;$month<count($mont);$month++)
+						{
+							echo "<option>$mont[$month]</option>";
+						}
 					?>
-					
-					</select>
+				</select>
 					
 					<select name="year">
 					<option disabled selected>Year </option>
